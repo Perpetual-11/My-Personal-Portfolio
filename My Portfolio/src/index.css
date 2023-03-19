@@ -1,0 +1,273 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    font-weight: normal;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo{
+    font-size: 33px;
+    font-weight: 700;
+    color: #ff7200;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: rgba(12, 202, 44, 0.667);
+  }
+
+  .fa-bars{
+    color: #fff;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: #000;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+
+  nav ul{
+      position: absolute;
+      width: 100%;
+      height: 90vh;
+      background: #000;
+      top: 131px;
+      left: -115%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.5s;
+  }
+
+  nav ul li{
+      display: inline-block;
+      line-height: -70;
+      margin: 30px 0;
+      position: relative;
+      top: -120px;
+  }
+
+  nav ul li a{
+      font-size: 20px;
+  }
+
+  a:hover,a.active{
+      background: none;
+      color: #fff;
+  }
+
+  #check:checked ~ ul{
+      left: 0;
+  }
+}
+  
+  /* Main Styling */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  section {
+    margin-bottom: 60px;
+  }
+
+  #about p{
+    background-color: #ff7200;
+    padding: 10px 30px;
+    color: #f7f7f7;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: rgba(30, 224, 12, 0.667);
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgba(12, 202, 28, 0.667);
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff7200;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+ #skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ff7200;
+    padding: 10px 30px;
+    color: #fff;
+  }
+  
+  li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  progress{
+    max-width: 500px;
+    height: 30px;
+    background-color: #1cf708;
+  }
+  
+  .project {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px #ddd;
+  }
+  
+  .project h3 {
+    margin-top: 0;
+  }
+  
+  .project p {
+    margin-bottom: 20px;
+  }
+  
+  .project a {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #ff7200;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .project a:hover {
+    background-color: #fff;
+    color: #ff7200;
+  }
+  
+  /* Contact Form Styling */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff7200;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  button a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons a{
+    margin-left: 24px;
+    color: #fff;
+    transition: .5s;
+  }
+
+  .social-icons a:hover{
+    color: #ff7200;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
